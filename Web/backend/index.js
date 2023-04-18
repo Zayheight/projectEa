@@ -31,15 +31,7 @@ app.get("/user", (req, res) => {
     }
   });
 });
-app.get("/transaction_Tabel", (req, res) => {
-  db.query("SELECT * FROM transaction", (err, result) => {
-    if (err) {
-      console.log(err);
-    } else {
-      res.send(result);
-    }
-  });
-});
+
 
 
 app.get("/transaction", (req, res) => {
